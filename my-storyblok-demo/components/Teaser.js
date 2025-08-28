@@ -1,7 +1,12 @@
 import { storyblokEditable } from "@storyblok/react";
 
-const Teaser = ({ blok }) => {
-  return <h2 className="text-2xl mb-10" {...storyblokEditable(blok)}>{blok.headline}</h2>;
-};
+const Teaser = ({ blok }) => (
+  <section {...storyblokEditable(blok)} className="mb-12 font-mono">
+  <h2 className="text-xl mb-2 font-bold">{blok.headline}</h2>
+    {blok.description && (
+  <p className="text-sm text-gray-700">{blok.description}</p>
+    )}
+  </section>
+);
 
 export default Teaser;

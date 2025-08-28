@@ -5,6 +5,11 @@ import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Testimonial from "../components/Testimonial";
+import Header from "../components/Header";
+import Blogs from "../components/Blogs";
+import Post from "../components/Post";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 const components = {
   feature: Feature,
@@ -12,6 +17,11 @@ const components = {
   teaser: Teaser,
   page: Page,
   testimonial: Testimonial,
+  header: Header,
+  blogs: Blogs,
+  post: Post,
+  about: About,
+  contact: Contact,
 };
 
 storyblokInit({

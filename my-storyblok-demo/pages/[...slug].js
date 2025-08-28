@@ -23,5 +23,3 @@ export async function getStaticProps({ params }) {
     revalidate: 3600,
   };
 }
-
-// https://www.storyblok.com/docs/guide/next-js#dynamic-routing
