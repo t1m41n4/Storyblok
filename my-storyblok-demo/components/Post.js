@@ -1,7 +1,10 @@
 import { storyblokEditable } from "@storyblok/react";
 
 const Post = ({ blok }) => (
-  <section {...storyblokEditable(blok)} className="py-10 px-4 sm:px-8">
+  <section id="post" {...storyblokEditable(blok)} className="py-10 px-4 sm:px-8">
+    <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center font-mono" id="post-title">
+      Blog Post
+    </h2>
     <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden">
       {blok.image && (
         <div className="w-full md:w-1/3 flex-shrink-0">

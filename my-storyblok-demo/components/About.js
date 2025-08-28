@@ -2,6 +2,7 @@ import { storyblokEditable } from "@storyblok/react";
 
 const About = ({ blok }) => (
   <section
+    id="about"
     {...storyblokEditable(blok)}
     className="w-full py-10 bg-blue-50 rounded-xl shadow-lg mb-16 flex flex-col items-center px-4"
   >

@@ -2,6 +2,7 @@ import { storyblokEditable } from "@storyblok/react";
 
 const Blogs = ({ blok }) => (
   <section
+    id="blog"
     {...storyblokEditable(blok)}
     className="p-6 max-w-3xl mx-auto sm:p-8 lg:p-10"
   >
